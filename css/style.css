@@ -1,0 +1,227 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 11, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 13, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 17, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 22, ../scss/style.scss */
+img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 27, ../scss/style.scss */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 32, ../scss/style.scss */
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 36, ../scss/style.scss */
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 43, ../scss/style.scss */
+header {
+  display: block;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 2px solid #2473ad;
+  box-shadow: 5px #7a7b7c;
+}
+/* line 54, ../scss/style.scss */
+header div:first-child {
+  margin-right: 30%;
+}
+/* line 57, ../scss/style.scss */
+header div {
+  display: inline-block;
+}
+
+/* line 63, ../scss/style.scss */
+.icons a {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+/* line 69, ../scss/style.scss */
+.profile {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+/* line 73, ../scss/style.scss */
+.profile img {
+  width: 50px;
+  border-radius: 100px 100px 100px 100px;
+}
+/* line 77, ../scss/style.scss */
+.profile .greendot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+}
+
+/* line 86, ../scss/style.scss */
+.page_title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 91, ../scss/style.scss */
+.current_projects {
+  padding: 20px;
+  background: url(../img/pattern.png);
+  background-size: cover;
+}
+/* line 95, ../scss/style.scss */
+.current_projects h2 {
+  color: white;
+}
+/* line 98, ../scss/style.scss */
+.current_projects a {
+  color: white;
+  width: 30%;
+}
+
+/* line 104, ../scss/style.scss */
+.labels {
+  display: none;
+}
+
+/* line 108, ../scss/style.scss */
+.button {
+  border: 1px solid #ee5828;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* line 120, ../scss/style.scss */
+.login_background {
+  background-color: black;
+  height: 100px;
+}
+
+/* line 125, ../scss/style.scss */
+.wrapper {
+  background: url(../img/big_pattern.png);
+  background-size: cover;
+  height: 100%;
+  padding-top: 100px;
+}
+
+/* line 131, ../scss/style.scss */
+.login_box {
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #f3f2f2;
+  color: #2e2e2e;
+  border: 3px solid #ee5828;
+  border-radius: 5px;
+}
+/* line 139, ../scss/style.scss */
+.login_box img {
+  padding-bottom: 20px;
+  width: 100px;
+  margin: 0 auto;
+}
+/* line 144, ../scss/style.scss */
+.login_box form {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 148, ../scss/style.scss */
+.login_box a {
+  display: block;
+}
+/* line 151, ../scss/style.scss */
+.login_box h2 {
+  padding: 5px;
+  font-size: 1em;
+}
+/* line 156, ../scss/style.scss */
+.login_box .form_field {
+  width: 90%;
+  margin: 0 auto;
+  border: 3px solid #e6e6e6;
+  background: #fefcfc;
+  color: #c9b7a2;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* line 165, ../scss/style.scss */
+.login_box .submit_button {
+  background-color: #2b8dd6;
+  color: white;
+  text-align: center;
+}
+
+/* line 172, ../scss/style.scss */
+.login_footer nav {
+  width: 50%;
+  display: block;
+}
+/* line 176, ../scss/style.scss */
+.login_footer li {
+  display: inline-block;
+}
+/* line 179, ../scss/style.scss */
+.login_footer a {
+  padding: 10px;
+  color: #7a7b7c;
+}
+
+/* line 189, ../scss/style.scss */
+footer {
+  background: url(../img/pattern.png);
+  background-size: cover;
+  height: 100px;
+  padding: 20px 0 20px 0;
+}
+/* line 194, ../scss/style.scss */
+footer .footer_content {
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 198, ../scss/style.scss */
+footer img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+/* line 205, ../scss/style.scss */
+footer li a {
+  display: block;
+  color: #7a7b7c;
+}
+/* line 209, ../scss/style.scss */
+footer li a:visited {
+  color: #7a7b7c;
+}

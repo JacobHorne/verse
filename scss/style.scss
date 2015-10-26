@@ -1,0 +1,227 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+$blue:#2473ad;
+$grey:#2e2e2e;
+$lgrey:#7a7b7c;
+$orange:#ee5828;
+$backgroundgrey:#f3f2f2;
+
+
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+img{
+	display:block;
+	padding:0;
+	margin:0;
+}
+ul{
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+a{
+	display:block;
+	text-decoration: none;
+}
+h1,h2,h3,h4{
+	padding:0;
+	margin:0;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+header{
+	display:block;
+	background-color:white;
+	padding:5px 10px 5px 10px;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	border-bottom: 2px solid $blue;
+	box-shadow:5px $lgrey;
+	
+	div:first-child{
+		margin-right:30%;
+	}
+	div{
+	display:inline-block;
+	}
+}
+
+.icons{
+	a{
+	display:inline-block;
+	padding-bottom:15px;
+	}
+}
+
+.profile{
+	position:relative;
+	top:0;
+	right:0;
+	img{
+		width:50px;
+		border-radius: 100px 100px 100px 100px;
+	}
+	.greendot{
+		position:absolute;
+		top:0;
+		right:0;
+		width:15px;
+	}
+
+}
+
+.page_title{
+	text-align:center;
+	margin-top:100px;
+}
+
+.current_projects{
+	padding:20px;
+	background: url(../img/pattern.png);
+	background-size: cover;
+	h2{
+		color:white;
+	}
+	a{
+		color:white;
+		width:30%;
+	}
+}
+
+.labels{
+	display:none;
+}
+
+.button{
+	border:1px solid $orange;
+	padding:10px;
+	border-radius:5px;
+	display:inline-block;
+}
+
+
+.wrapper{
+
+}
+
+.login_background{
+	background-color:black;
+	height:100px;
+}
+
+.wrapper{
+	background: url(../img/big_pattern.png);
+	background-size: cover;
+	height:100%;
+	padding-top:100px;
+}
+.login_box{
+	padding:20px;
+	width:50%;
+	margin:0 auto;
+	background-color:$backgroundgrey;
+	color:$grey;
+	border:3px solid $orange;
+	border-radius:5px;
+	img{
+		padding-bottom:20px;
+		width:100px;
+		margin: 0 auto;
+	}
+	form{
+		width:90%;
+		margin:0 auto;
+	}
+	a{
+		display:block;
+	}
+	h2{
+		padding:5px;
+		font-size: 1em;
+	}
+
+	.form_field{
+		width:90%;
+		margin:0 auto;
+		border: 3px solid #e6e6e6;
+   		background: #fefcfc;
+   		color: #c9b7a2;
+   		padding:10px;
+   		border-radius:5px;
+	}
+	.submit_button{
+		background-color:#2b8dd6;
+		color:white;
+		text-align:center;
+	}
+}
+.login_footer{
+	nav{
+		width:50%;
+		display:block;
+	}
+	li{
+		display:inline-block;
+	}
+	a{	
+		padding:10px;
+		color:$lgrey;
+	}
+}
+
+
+
+
+
+footer{
+	background: url(../img/pattern.png);
+	background-size: cover;
+	height:100px;
+	padding:20px 0 20px 0;
+	.footer_content{
+		width:50%;
+		margin:0 auto;
+	}
+	img{
+		width:100px;
+		padding-bottom:20px;
+	}
+	ul{
+	}
+	li{
+		a{
+		display:block;
+		color:$lgrey;
+			
+		&:visited{
+			color:$lgrey;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
