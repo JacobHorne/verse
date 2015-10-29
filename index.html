@@ -11,78 +11,221 @@
 
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class= "wrapper">
-            <header>
-                <div class="layr_logo">
-                    <a href="index.html"></a><img src="img/layr.png"></a>
-                </div>
-
-                <div class="icons">
-                    <a href="#"><img src="img/folder.png"> </a>     
-                    <a href="#"><img src="img/notification.png"> </a>
-                    <a href="#"><img src="img/envelope.png"> </a>
-                </div>
-
-                <div class="profile">
-                    <a href="#"><img src="img/gio.jpg"> </a>
-                    <img src="img/green_circle.png"class="greendot"> </a>
-                </div>              
-            </header>
-
-            <div class="page_title">
-                <h1>LAYR NETWORK</h1>
+        <header>
+            <div class="layr_logo">
+                <a href="index.html"></a><img src="img/layr.png"></a>
             </div>
 
+            <div class="profile">
+                <a href="#"><img src="img/gio.jpg" id="gio"> </a>
+                <img src="img/green_circle.png"class="greendot"> </a>
+            </div>              
+        </header>
+
+        
+        <div class="toggle">
+            <a href="#" data-page=".current_projects">Current</a>
+            <a href="#" data-page=".open_projects">Available</a>
+            <a href="#" data-page=".history">History</a>
+        </div>
+
+
+        <div class="wrapper">
+
+            <!--/////////////////////////////////////////////////////////-->
+            <!--/////////////////////////////////////////////////////////-->
+            <!--/////////////////////////////////////////////////////////-->
+            <!--/////////////////////////////////////////////////////////-->
+            
             <section class="current_projects">
-                <h2>Current Projects:</h2>
-                <div class="labels">
-                    <h3>Title</h3>
-                    <h3>Time Left</h3>
-                    <h3>Action</h3>
+
+                <h1>Current Projects</h1>
+                
+                <div class="titles">
+                    <h4>Title</h4>
+                    <h4>Time Left</h4>
+                    <h4>Action</h4>
                 </div>
 
-                <div class="3d">
-                <a href="#"><div>
-                        <ul>
-                            <li><img src="img/orange_3d.png"></li>
-                            <li><h4>William Brice 3d Model Render</h4>
-                            <li><h4>28hrs</h4></li>
-                            <li><h4>info</h4></li>
-                            <a href="#" class="button">More Info</a>
-                        </ul>
-                </div></a>
-                </div>
+                <ul>
+                    <li>
+                        <img src="img/orange_3d.png">
+                        <h2>Williams Brice Model</h2>
+                        
+                        <div class="meter">
+                            <div></div>
+                        </div>
+                        
+                        <h3>10.4.15</h3>
 
-                <a href="#"><div>
-                    <div class="">
-                        <ul>
-                            <li><img src="img/orange_triangle.png"></li>
-                            <li><h4>28hrs</h4></li>
-                            <li><h4>info</h4></li>
-                            <a href="#" class="button">More Info</a>
-                        </ul>
-                    </div>
-                </div></a>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_triangle.png">
+                        <h2>Belk Product Model</h2>
+                        
+                        <div class="meter2">
+                            <div></div>
+                        </div>
+                        
+                        <h3>12.10.15</h3>
 
-                <a href="#"><div>
-                    <div class="3d">
-                        <ul>
-                            <li><img src="img/orange_relief.png"></li>
-                            <li><h4>28hrs</h4></li>
-                            <li><h4>info</h4></li>
-                            <a href="#" class="button">More Info</a>
-                        </ul>
-                    </div>
-                </div></a>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_relief.png">
+                        <h2>Odell's Photo Relief</h2>
+                        
+                        <div class="meter">
+                            <div></div>
+                        </div>
 
+                        <h3>5.1.16</h3>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_3d.png">
+                        <h2>Halloween Display</h2>
+                        
+                        <div class="meter"><div></div></div>
+                        
+                        <h3>6.15.16</h3>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                </ul>
             </section>
+
+            <!--/////////////////////////////////////////////////////////-->
+            <!--/////////////////////////////////////////////////////////-->
+            <!--/////////////////////////////////////////////////////////-->
+            <!--/////////////////////////////////////////////////////////-->
 
             <section class="open_projects">
-                <h2>Open Projects</h2>
+                <h1>Open Projects</h1>
+                
+                <div class="titles">
+                    <h4>Title</h4>
+                    <h4>Time Left</h4>
+                    <h4>Action</h4>
+                </div>
+
+                <ul>
+                    <li>
+                        <img src="img/blue_box.png">
+                        <h2>Williams Brice Model</h2>
+                        
+                        <div class="meter">
+                            <div></div>
+                        </div>
+                        
+                        <h3>9.1.16</h3>
+
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_triangle.png">
+                        <h2>Belk Product Model</h2>
+                        
+                        <div class="meter2">
+                            <div></div>
+                        </div>
+                        
+                        <h3>12.2.15</h3>
+
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_relief.png">
+                        <h2>Odell's Photo Relief</h2>
+                        
+                        <div class="meter">
+                            <div></div>
+                        </div>
+
+                        <h3>1.12.16</h3>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_3d.png">
+                        <h2>Halloween Display</h2>
+                        
+                        <div class="meter"><div></div></div>
+                        
+                        <h3>3.20.16</h3>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                </ul>
             </section>
+
+        <!--/////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////////////////////////////-->
+
+            <section class="history">
+                <h1>Open Projects</h1>
+                
+                <div class="titles">
+                    <h4>Title</h4>
+                    <h4>Time Left</h4>
+                    <h4>Action</h4>
+                </div>
+
+                <ul>
+                    <li>
+                        <img src="img/blue_box.png">
+                        <h2>Williams Brice Model</h2>
+                        
+                        <div class="meter">
+                            <div></div>
+                        </div>
+                        
+                        <h3>5.12.16</h3>
+
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_triangle.png">
+                        <h2>Belk Product Model</h2>
+                        
+                        <div class="meter2">
+                            <div></div>
+                        </div>
+                        
+                        <h3>3.2.16</h3>
+
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_relief.png">
+                        <h2>Odell's Photo Relief</h2>
+                        
+                        <div class="meter">
+                            <div></div>
+                        </div>
+
+                        <h3>8.12.16</h3>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                    <li>
+                        <img src="img/orange_3d.png">
+                        <h2>Halloween Display</h2>
+                        
+                        <div class="meter"><div></div></div>
+                        
+                        <h3>11.21.15</h3>
+                        <div><a href="#" class="action button">More Info</a></div>
+                    </li>
+                </ul>
+            </section>
+        </div> <!--Wrapper with pattern.png -->
+
+
+
 
             <footer>
                 <a href="www.zverse.com"><img src="img/zverse.png"></a></li>
@@ -95,15 +238,10 @@
                 </nav>
             </footer>
 
-
-
-
-
-        
-    
         <!-- CONTENT FOR WEBSITE -->
         
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
         <script src="js/script.js"></script>
     </body>
 </html>
