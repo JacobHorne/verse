@@ -1,11 +1,84 @@
-/***** CLEARFIX is applied to the parent of floated elements *************/
-/*************************************************************************/
 $blue:#2473ad;
 $grey:#2e2e2e;
 $lgrey:#7a7b7c;
 $orange:#ee5828;
 $backgroundgrey:#f3f2f2;
+$black:#121410;
 
+
+.slideout-menu {
+  position: fixed;
+  left: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+#panel{
+	background: white;
+}
+
+#menu{
+	background-color:$black;
+	#close{
+		text-align: right;
+	}
+	li{
+		padding-left:5px;
+		border-bottom: 1px solid $blue;
+	}
+	li:first-child{
+		border:none;
+	}
+	a{
+		color:$lgrey;
+		font-size: .9em;
+		padding:10px;
+		&:hover{
+			background-color:$lgrey;
+			color:$grey;
+		}
+	}
+	img{
+		width:50px;
+		margin-right:10px;
+	}
+	#menu_profile{
+		display:inline-block;
+	}
+}
+
+.close_popover{
+	float:right;
+	color:$grey;
+	a:visited{
+		color:$grey;
+	}
+}
+
+
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
 
 
 .clearfix {
@@ -19,7 +92,9 @@ $backgroundgrey:#f3f2f2;
     }
 }
 body{
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: "myriad-pro-condensed", sans-serif;
+	width: 100%;
+  	height: 100%;
 }
 
 img{
@@ -31,6 +106,10 @@ ul{
 	padding:0;
 	margin:0;
 	list-style-type: none;
+}
+li{
+	padding:0;
+	margin:0;
 }
 a{
 	display:block;
@@ -55,7 +134,7 @@ form{
 /**********************************/
 header{
 	display:block;
-	background-color:white;
+	background-color:$black;
 	padding:5px 10px 5px 10px;
 	position:fixed;
 	left:0;
@@ -67,13 +146,18 @@ header{
 	
 	div:first-child{
 		float:left;
+		width:60%;
 	}
 	div:last-child{
 		float:right;
 	}
+	.layr_logo{
+		img{
+		max-width: 65px;
+		}
+	}
 
 }
-
 .icons{
 	a{
 	display:inline-block;
@@ -86,43 +170,138 @@ header{
 	top:0;
 	right:0;
 	img{
-		width:50px;
+		width:30px;
 		border-radius: 100px 100px 100px 100px;
+		margin:0 auto;
 	}
-	.greendot{
-		position:absolute;
-		top:0;
-		right:0;
-		width:15px;
+	a{
+		color:white;
+		&:visited{
+			color:white;
+		}
 	}
 }
 
 .toggle{
-	margin:100px 0px 30px 0px;
-	text-align:center;
+	padding:100px 0 0 0;
 	a{
-		color:#2e2e2e;
+		color:$black;
 		display:inline-block;
-		padding:5px 10px 5px 10px;
-		border:3px solid $blue;
-		border-radius: 5px;
-		font-size: 1.4em;
+		padding:10px 20px 10px 20px;
+		border:4px solid $black;
+		border-radius: 5px 10px 0px 0px;
+		font-size: 1.1em;
 		&:hover{
 			color:white;
-			background-color:$blue;
+			background-color:$black;
 			transition: 1.0s ease all;
 		}
 	}
 }
 
+.main_wrapper{
+	background:$lgrey;
+	padding:25px 25px 100px 25px;
+}
+
 .wrapper{
 	background: url(../img/pattern.png);
 	background-size: contain;
-	background-position: center center;
-	padding:20px;
+	background-position: fixed;
+	padding:50px;
+	border: 6px solid black;
+	border-radius:0px 5px 5px 5px;
 }
 
 .current_projects{
+	color:white;
+	a{
+		color:white;
+		width:50px;
+		text-align: center;
+	}
+	li{
+		border-bottom:1px solid $lgrey;
+	}
+	h2{
+		padding-bottom:10px;
+		font-size: 1.2em;
+	}
+	div{
+		margin-bottom:20px;
+	}
+	h3{
+		padding-bottom:10px;
+		font-size: 1em;
+	}
+	img{
+		padding-bottom:10px;
+		width:30%;
+		max-width:100px;
+		padding:20px 0 20px 0;
+	}
+}
+
+.titles{
+	display:none;
+}
+
+.meter{
+	padding:10px 0 10px 0;
+	width:25%;
+	max-width:120px;
+	padding:8px;
+	position:relative;
+	overflow:hidden;
+	border-radius:10px;
+	border:2px solid $blue;
+	margin-right:10%;
+
+	span{
+		display: block;
+		padding:8px;
+		border-radius:10px;
+		background-color:$orange;
+		position:absolute;
+		top:0;
+		bottom:0;
+		// right:40%;
+		left:0px;
+		z-index: 50;
+	}
+}
+
+.open_projects{
+	color:white;
+	a{
+		color:white;
+		width:30%;
+		max-width: 150px;
+		text-align: center;
+	}
+	li{
+		border-bottom:1px solid $lgrey;
+	}
+	h2{
+		padding-bottom:10px;
+		font-size: 1.2em;
+	}
+	div{
+		margin-bottom:20px;
+	}
+	h3{
+		padding-bottom:10px;
+		font-size: 1em;
+	}
+	img{
+		padding-bottom:10px;
+		width:30%;
+		max-width:100px;
+		padding:20px 0 20px 0;
+	}
+}
+
+.history{
 	color:white;
 	a{
 		color:white;
@@ -144,65 +323,17 @@ header{
 		padding:20px 0 20px 0;
 	}
 }
-.titles{
-	display:none;
-}
-
-.meter{
-	padding:10px 0 10px 0;
-	width:20%;
-	max-width:120px;
-	padding:8px;
-	position:relative;
-	overflow:hidden;
-	border-radius:10px;
-	border:2px solid $blue;
-	div{
-		padding:8px;
-		border-radius:10px;
-		background-color:$orange;
-		position:absolute;
-		top:0;
-		bottom:0;
-		right:40%;
-		left:0px;
-	}
-	h2{
-		padding:10px 0 10px 0px;
-	}
-	h5{
-		z-index:1000px;
-	}
-}
-
-.meter2{
-	width:20%;
-	max-width:120px;
-	padding:8px;
-	position:relative;
-	overflow:hidden;
-	border-radius:10px;
-	border:2px solid $blue;
-	div{
-		padding:8px;
-		border-radius:10px;
-		background-color:$orange;
-		position:absolute;
-		top:0;
-		bottom:0;
-		right:10%;
-		left:0px;
-	}
-
-}
-
-
 
 .button{
 	border:2px solid $orange;
-	padding:5px;
+	padding:5px 10px 5px 10px;
 	border-radius:5px;
 	display:inline-block;
+	&:hover{
+		background-color:$orange;
+		color:white;
+		transition: 1s ease all;
+	}
 }
 
 .signin_wrapper{
@@ -254,20 +385,59 @@ header{
    		padding:10px;
    		border-radius:5px;
 	}
-	.submit_button{
-		margin:0 auto;
-		margin-top:20px;
-		background-color:#2b8dd6;
+}
+.submit_button{
+	width:250px;
+	padding:10px;
+	margin:0 auto;
+	margin-top:20px;
+	background-color:#2b8dd6;
+	color:white;
+	text-align:center;
+	border:1px solid white;
+}
+
+
+.profile_background{
+	background: url(../img/pattern.png);
+	background-size: cover;
+	background-position: center center;
+	height:100px;
+	padding-top:80px;
+	margin-bottom:100px;
+	position:relative;
+	h1{
+		font-size:1.2em;
 		color:white;
-		text-align:center;
+		text-align: center;
+	}
+	img{
+		width:20%;
+		max-width:129px;
+		position:absolute;
+		left: 10px;
+    	top: 130px;
+		border:3px solid white;
+		border-radius:5px;
+	}
+	h2{
+		color:white;
+		position:relative;
+		top: 45px;
+    	left: 150px;
+		font-size: 1em;
 	}
 }
 
 footer{
 	background-color:black;
 	height:100px;
-	padding:20px 0 20px 0;
+	padding:40px;
 	border-top: 1px solid $grey;
+	div{
+		width:50%;
+		margin:0 auto;
+	}
 	img{
 		width:100px;
 		padding-bottom:20px;
@@ -284,13 +454,149 @@ footer{
 			}
 		}
 	}
-
 }
+
+
+.darkbox{
+	position: absolute;
+	z-index: 10000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: rgba( 0,0,0, 0.8 );
+	.whitebox{
+		background-color:white;
+		border:5px solid $orange;
+		border-radius:10px;
+		padding:20px;
+		width:80%;
+		margin: 0 auto;
+		z-index: 20000;
+		margin-top:50px;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	p{
+		border-bottom:1px solid $lgrey;
+		padding-bottom:10px;
+	}
+	img{
+		width:80%;
+		max-width: 500px;
+		margin:0 auto;
+	}
+	article{
+		font-style: italic;
+		font-size: .9em;
+	}
+	textarea{
+		width:95%;
+		margin:20px 0 20px 0;
+	}
+	input{
+		margin-top:20px;
+		float:right;
+		color:white;
+		background-color:$blue;
+	}
+}
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+//////////////////Media Query @ 600////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
 
 @media screen and (min-width: 600px){
+	.titles{
+		display:block;
+		color:white;
+		h4{
+			width:10%;
+			display:inline-block;
+		}
+	}
+	.current_projects{
+		h2{
+			width:13%;
+			display:inline-block;
+			vertical-align: middle;
+		}
+		h3{
+			width:13%;
+			display:inline-block;
+			vertical-align: middle;
+		}
+		img{
+			width:18%;
+			display:inline-block;
+			vertical-align: middle;
+		}
+		div{
+			width:13%;
+			margin-left:3%;
+			display:inline-block;
+			vertical-align: middle;
+		}
+		.meter{
+			margin:0px 3% 0px 3%;
+		}
+	}
+	.open_projects{
+		h2,h3,div,img{
+			width:18%;
+			display:inline-block;
+			vertical-align: middle;
+		}
+		.meter{
+			margin:0px 3% 0px 3%;
+		}
+	}
+
+	footer{
+		li{
+			display:inline-block;
+			width:20%;
+		}
+		a{
+			vertical-align: top;
+		}
+	}
 }
-
-
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+//////////////////Media Query @ 900////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+@media screen and (min-width: 900px){
+	.titles{
+		display:block;
+		color:white;
+		h4{
+			width:20%;
+			display:inline-block;
+		}
+	}
+	.current_projects{
+		h2,h3,div,img{
+			width:15%;
+			display:inline-block;
+			vertical-align: middle;
+		}
+		h3{
+			padding:0;
+		}
+		.meter{
+			margin:0px 3% 0px 3%;
+		}
+	}
+}
 
 
 

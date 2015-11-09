@@ -14,17 +14,18 @@
     buttons.on( "click", function(e){   //e is just an object that stores what happened.
 
       var className = $(this).data("page"); //"data-page" It looks for that. data-????
-      var dark =  $(this).data("page");
       divName.hide(); //this basically makes all divs display none
-      
+
+      buttons.css({"background-color" : "black" });
+
       //$( className ).show( 50 );// takes the string classNAme and displays. on click.
       e.preventDefault();//a loads a page on default, we do not want that, so we prevent it
       $( className ).slideDown( 0 );
+
     });
 
     divName.hide(); //hide all divs
     $( ".current_projects" ).show( 100 );//show p1       This is is to show page 1 on load.
-
 
     //alternative
     //$( ".p1" ).fadein( 1000 );//show p1 
@@ -42,15 +43,15 @@
       'side': 'right'
     });
     
-    $('#profile').on('click', function() {
+    $('#gio').on('click', function() {
       slideout.toggle();
     });
 
-    $('#close').on('click', function() {
+    $('#x').on('click', function() {
       slideout.close();
     });
 
-  });
+  } );
 
 
   //POPOVER
@@ -64,7 +65,7 @@
       
       $( ".darkbox" ).toggle();
       $( ".whitebox" ).hide();
-      $( className ).fadeIn("slow");
+      $( className ).show();
     });
 
     $( ".close_popover" ).on( "click", function( e ){

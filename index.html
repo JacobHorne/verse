@@ -11,226 +11,225 @@
 
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <div class="layr_logo">
-                <a href="index.html"></a><img src="img/layr.png"></a>
-            </div>
+        <nav id="menu">
+            <ul>
+                <a href="#" id="close">[X]</a>
+                <li><a href="#"><img src="img/bluelayr.png"></a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Billing</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="panel">
 
-            <div class="profile">
-                <a href="#"><img src="img/gio.jpg" id="gio"> </a>
-                <img src="img/green_circle.png"class="greendot"> </a>
-            </div>              
-        </header>
+            <div class="main_wrapper">
+                <header>
+                    <div class="layr_logo">
+                        <a href="index.html"><img src="img/bluelayr.png"></a>
+                    </div>
 
-        
-        <div class="toggle">
-            <a href="#" data-page=".current_projects">Current</a>
-            <a href="#" data-page=".open_projects">Available</a>
-            <a href="#" data-page=".history">History</a>
-        </div>
+                    <div class="profile">
+                        <a id="profile" href="#"><img src="img/profile.png">MENU</a>
+                    </div>              
+                </header>
 
+                <h1>LAYR ARTIST NETWORK</h1>
 
-        <div class="wrapper">
-
-            <!--/////////////////////////////////////////////////////////-->
-            <!--/////////////////////////////////////////////////////////-->
-            <!--/////////////////////////////////////////////////////////-->
-            <!--/////////////////////////////////////////////////////////-->
-            
-            <section class="current_projects">
-
-                <h1>Current Projects</h1>
-                
-                <div class="titles">
-                    <h4>Title</h4>
-                    <h4>Time Left</h4>
-                    <h4>Action</h4>
+                <div class="toggle">
+                    <a href="#" data-page=".current_projects" data-fill="$black">Current</a>
+                    <a href="#" data-page=".open_projects" data-fill="$black">Open</a>
+                    <a href="#" data-page=".history ">History</a>
                 </div>
 
-                <ul>
-                    <li>
-                        <img src="img/orange_3d.png">
-                        <h2>Williams Brice Model</h2>
-                        
-                        <div class="meter">
-                            <div></div>
-                        </div>
-                        
-                        <h3>10.4.15</h3>
+                <div class="wrapper">
+                    
+                    <section class="current_projects">
 
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_triangle.png">
-                        <h2>Belk Product Model</h2>
-                        
-                        <div class="meter2">
-                            <div></div>
-                        </div>
-                        
-                        <h3>12.10.15</h3>
+                        <h1>Current Projects</h1>
 
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_relief.png">
-                        <h2>Odell's Photo Relief</h2>
-                        
-                        <div class="meter">
-                            <div></div>
-                        </div>
+                        <section class="titles">
+                            <h4></h4>
+                            <h4>Title</h4>
+                            <h4>Time Left</h4>
+                            <h4>Date</h4>
+                        </section>
 
-                        <h3>5.1.16</h3>
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_3d.png">
-                        <h2>Halloween Display</h2>
-                        
-                        <div class="meter"><div></div></div>
-                        
-                        <h3>6.15.16</h3>
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                </ul>
-            </section>
+                        <ul>
+                            <li class="clearfix">
+                                <img src="img/blue_box.png">
+                                <h2>Mississippi Stadium Model</h2>
 
-            <!--/////////////////////////////////////////////////////////-->
-            <!--/////////////////////////////////////////////////////////-->
-            <!--/////////////////////////////////////////////////////////-->
-            <!--/////////////////////////////////////////////////////////-->
+                                <div class="meter">
+                                    <span data-size="30">
+                                    </span>
+                                </div>
+                                
+                                
+                                <h3>May/4/2015</h3>
 
-            <section class="open_projects">
-                <h1>Open Projects</h1>
-                
-                <div class="titles">
-                    <h4>Title</h4>
-                    <h4>Time Left</h4>
-                    <h4>Action</h4>
-                </div>
+                                <div><a href="#" data-page=".stadium" class="action_button button">Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/triangle.png">
+                                <h2>Belk Product Model</h2>
+                                
+                                <div class="meter">
+                                    <span data-size="15"></span>
+                                </div>
+                                
+                                <h3>12.10.15</h3>
 
-                <ul>
-                    <li>
-                        <img src="img/blue_box.png">
-                        <h2>Williams Brice Model</h2>
-                        
-                        <div class="meter">
-                            <div></div>
-                        </div>
-                        
-                        <h3>9.1.16</h3>
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/relief.png">
+                                <h2>Odell's Photo Relief</h2>
+                                
+                                <div class="meter">
+                                    <span data-size="70"></span>
+                                </div>
 
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_triangle.png">
-                        <h2>Belk Product Model</h2>
-                        
-                        <div class="meter2">
-                            <div></div>
-                        </div>
-                        
-                        <h3>12.2.15</h3>
+                                <h3>5.1.16</h3>
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/blue_box.png">
+                                <h2>Halloween Display</h2>
+                                
+                                <div class="meter">
+                                    <span data-size="14"></span>
+                                </div>
+                                
+                                <h3>6.15.16</h3>
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                             <li>
+                                <img src="img/relief.png">
+                                <h2>Odell's Photo Relief</h2>
+                                
+                                <div class="meter">
+                                    <span data-size="62.185"></span>
+                                </div>
 
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_relief.png">
-                        <h2>Odell's Photo Relief</h2>
-                        
-                        <div class="meter">
-                            <div></div>
-                        </div>
+                                <h3>5.1.16</h3>
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/triangle.png">
+                                <h2>Halloween Display</h2>
+                                
+                                <div class="meter">
+                                    <span data-size="50"></span>
+                                </div>
+                                
+                                <h3>6.15.16</h3>
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                        </ul>
+                    </section>
 
-                        <h3>1.12.16</h3>
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_3d.png">
-                        <h2>Halloween Display</h2>
-                        
-                        <div class="meter"><div></div></div>
-                        
-                        <h3>3.20.16</h3>
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                </ul>
-            </section>
+                    <!--/////////////////////////////////////////////////////////-->
+                    <!--/////////////////////////////////////////////////////////-->
+                    <!--/////////////////////////////////////////////////////////-->
+                    <!--/////////////////////////////////////////////////////////-->
 
-        <!--/////////////////////////////////////////////////////////-->
-        <!--/////////////////////////////////////////////////////////-->
-        <!--/////////////////////////////////////////////////////////-->
-        <!--/////////////////////////////////////////////////////////-->
+                    <section class="open_projects">
+                        <h1>Open Projects</h1>
+                        
+                        <section class="titles">
+                            <h4>Hours Required</h4>
+                            <h4>Date</h4>
+                            <h4>Action</h4>
+                        </section>
 
-            <section class="history">
-                <h1>Open Projects</h1>
-                
-                <div class="titles">
-                    <h4>Title</h4>
-                    <h4>Time Left</h4>
-                    <h4>Action</h4>
-                </div>
+                        <ul>
+                            <li>
+                                <img src="img/blue_box.png">
 
-                <ul>
-                    <li>
-                        <img src="img/blue_box.png">
-                        <h2>Williams Brice Model</h2>
-                        
-                        <div class="meter">
-                            <div></div>
-                        </div>
-                        
-                        <h3>5.12.16</h3>
+                                <h2>Williams Brice Model</h2>
 
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_triangle.png">
-                        <h2>Belk Product Model</h2>
-                        
-                        <div class="meter2">
-                            <div></div>
-                        </div>
-                        
-                        <h3>3.2.16</h3>
+                                <div><a href="#" data-page=".brice" class="action_button button">Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/triangle.png">
 
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_relief.png">
-                        <h2>Odell's Photo Relief</h2>
+                                <h2>Belk Product Model</h2>
+                                
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/relief.png">
+
+                                <h2>Odell's Photo Relief</h2>
+
+                                <div><a href="#" class="action_button button">Info</a></div>
+                            </li>
+                        </ul>
+                    </section>
+
+                <!--/////////////////////////////////////////////////////////-->
+                <!--/////////////////////////////////////////////////////////-->
+                <!--/////////////////////////////////////////////////////////-->
+                <!--/////////////////////////////////////////////////////////-->
+
+                    <section class="history">
+                        <h1>History</h1>
                         
-                        <div class="meter">
-                            <div></div>
+                        <div class="titles">
+                            <h4>Title</h4>
+                            <h4>Time Left</h4>
+                            <h4>Action</h4>
                         </div>
 
-                        <h3>8.12.16</h3>
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                    <li>
-                        <img src="img/orange_3d.png">
-                        <h2>Halloween Display</h2>
-                        
-                        <div class="meter"><div></div></div>
-                        
-                        <h3>11.21.15</h3>
-                        <div><a href="#" class="action button">More Info</a></div>
-                    </li>
-                </ul>
-            </section>
-        </div> <!--Wrapper with pattern.png -->
+                        <ul>
+                            <li>
+                                <img src="img/blue_box.png">
+                                <h2>Williams Brice Model</h2>
+                                            
+                                <h3>5.12.16</h3>
 
+                                <a href="#" data-page=".williams" class="action_button">More Info</a>
+                            </li>
+                            <li>
+                                <img src="img/triangle.png">
+                                <h2>Belk Product Model</h2>
+                                
+                                <h3>3.2.16</h3>
 
+                                <div><a href="#" class="action_button">More Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/relief.png">
+                                <h2>Odell's Photo Relief</h2>
+
+                                <h3>8.12.16</h3>
+                                <div><a href="#" class="action_button">More Info</a></div>
+                            </li>
+                            <li>
+                                <img src="img/trangle.png">
+                                <h2>Halloween Display</h2>
+                                
+                                <h3>11.21.15</h3>
+                                <div><a href="#" class="action_button">More Info</a></div>
+                            </li>
+                        </ul>
+                    </section>
+                </div> <!--Wrapper with pattern.png -->
+            </div><!--wrapper background-->
 
 
             <footer>
-                <a href="www.zverse.com"><img src="img/zverse.png"></a></li>
                 <nav>
                     <ul> 
+                        <li><a href="www.zverse.com"><img src="img/zverse.png"></a></li>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">Legal</a></li>
                         <li><a href="">Privacy</a></li>
@@ -238,10 +237,61 @@
                 </nav>
             </footer>
 
+            <div class="darkbox">
+                <div class="whitebox stadium clearfix">
+                    <a href="#" class="close_popover">Close [X]</a>
+                    <h1>Mississippi State Stadium Model</h1>
+                    <img src="img/mississippi.png">
+                    <p>Mississippi State University celebrated 100 years of football played at Davis-Wade Stadium at Scott Field. University representatives want ZVerse to create concepts for donor recognition and retail products to acknowledge sponsors and to promote the upcoming football season.
+                    </p>
+                    <article>June 2 2015</article>
+                    <p>Marilyn Monroe:</p>
+                    <article>The LAYR artist, the client wants us to pay special attenton to the banners inside the stadium.</aritcle>
+                    <label for"textarea"="">Messages:</label>
+                    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+
+                <div class="whitebox brice">
+                    <a href="#" class="close_popover">Close [X]</a>
+                    <h1>3d Model</h1>
+                    <img src="img/noun_4.png">
+                    <p>Client Needs to render a 3d model of the Mueseum of Art in Columbia, SC. 
+                    </p>
+                    <article>June 2 2015</article>
+                    <nav>
+                        <ul>
+                            <li>Payout:  20hrs</li>
+                            <li>Date:    June 26th 2016</li>
+                            <li>Contact: Jane</li>
+                            <li>Payout:  20hrs</li>
+                        </ul>
+                    </nav>
+                    <input type="submit" value="Accept">
+                    <input type="submit" value="Decline">
+                </div>
+
+                <div class="whitebox williams">
+                    <a href="#" class="close_popover">Close [X]</a>
+                    <h1>Mississippi State Stadium Model WILLIAMS</h1>
+                    <img src="img/mississippi.png">
+                    <p>Mississippi State University celebrated 100 years of football played at Davis-Wade Stadium at Scott Field after new renovations were completed in 2014. University representatives wanted ZVerse to create concepts for donor recognition and retail products to acknowledge sponsors and promote the upcoming football season.
+                    </p>
+                    <article>June 2 2015</article>
+                    <p>Marilyn Monroe:</p>
+                    <article>The LAYR artist, the client wants us to pay special attenton to the banners inside the stadium.</aritcle>
+                    <label for"textarea"="">Messages:</label>
+                    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+
+        
+        </div>
         <!-- CONTENT FOR WEBSITE -->
         
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
+        <script src="node_modules/slideout/dist/slideout.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

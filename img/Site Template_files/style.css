@@ -1,4 +1,4 @@
-/* line 9, ../scss/style.scss */
+/* line 8, ../scss/style.scss */
 .slideout-menu {
   position: fixed;
   left: auto;
@@ -12,133 +12,116 @@
   display: none;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 .slideout-panel {
   position: relative;
   z-index: 1;
 }
 
-/* line 27, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
 .slideout-open .slideout-menu {
   display: block;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 #panel {
   background: white;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 #menu {
-  background-color: #121410;
+  background-color: black;
 }
-/* line 43, ../scss/style.scss */
-#menu #close {
-  text-align: right;
+/* line 42, ../scss/style.scss */
+#menu li {
+  text-align: center;
+  border-bottom: 1px solid white;
 }
 /* line 46, ../scss/style.scss */
-#menu li {
-  padding-left: 5px;
-  border-bottom: 1px solid #2473ad;
-}
-/* line 50, ../scss/style.scss */
-#menu li:first-child {
-  border: none;
-}
-/* line 53, ../scss/style.scss */
 #menu a {
   color: #7a7b7c;
   font-size: .9em;
   padding: 10px;
 }
-/* line 57, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 #menu a:hover {
   background-color: #7a7b7c;
   color: #2e2e2e;
 }
-/* line 62, ../scss/style.scss */
-#menu img {
-  width: 50px;
-  margin-right: 10px;
-}
-/* line 66, ../scss/style.scss */
-#menu #menu_profile {
-  display: inline-block;
-}
 
-/* line 71, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .close_popover {
   float: right;
   color: #2e2e2e;
 }
-/* line 74, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 .close_popover a:visited {
   color: #2e2e2e;
 }
 
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
-/* line 84, ../scss/style.scss */
+/* line 70, ../scss/style.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 86, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 90, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 94, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 body {
   font-family: "myriad-pro-condensed", sans-serif;
   width: 100%;
   height: 100%;
 }
 
-/* line 100, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 img {
   display: block;
   padding: 0;
   margin: 0;
 }
 
-/* line 105, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-/* line 110, ../scss/style.scss */
+/* line 96, ../scss/style.scss */
 li {
   padding: 0;
   margin: 0;
 }
 
-/* line 114, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 a {
   display: block;
   text-decoration: none;
 }
 
-/* line 118, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 h1 {
   padding: 5px 0 5px 0;
   margin: 0;
 }
 
-/* line 122, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 h2, h3, h4 {
   font-family: "Myriad Pro";
   padding: 0;
@@ -146,7 +129,7 @@ h2, h3, h4 {
   font-weight: 300;
 }
 
-/* line 128, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 form {
   padding: 0;
   margin: 0;
@@ -154,10 +137,10 @@ form {
 
 /***** SITE STYLES *************/
 /**********************************/
-/* line 135, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 header {
   display: block;
-  background-color: #121410;
+  background-color: white;
   padding: 5px 10px 5px 10px;
   position: fixed;
   left: 0;
@@ -167,112 +150,112 @@ header {
   box-shadow: 5px #7a7b7c;
   z-index: 1000;
 }
-/* line 147, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 header div:first-child {
   float: left;
   width: 60%;
 }
-/* line 151, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 header div:last-child {
   float: right;
 }
-/* line 155, ../scss/style.scss */
+/* line 141, ../scss/style.scss */
 header .layr_logo img {
   max-width: 65px;
 }
 
-/* line 162, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
+#menu_profile {
+  width: 20%;
+}
+
+/* line 152, ../scss/style.scss */
 .icons a {
   display: inline-block;
   padding-bottom: 15px;
 }
 
-/* line 168, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .profile {
   position: relative;
   top: 0;
   right: 0;
 }
-/* line 172, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .profile img {
   width: 30px;
   border-radius: 100px 100px 100px 100px;
-  margin: 0 auto;
 }
-/* line 177, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 .profile a {
-  color: white;
+  color: #2e2e2e;
 }
-/* line 179, ../scss/style.scss */
+/* line 168, ../scss/style.scss */
 .profile a:visited {
-  color: white;
+  color: #2e2e2e;
 }
 
-/* line 185, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .toggle {
   padding: 100px 0 0 0;
 }
-/* line 187, ../scss/style.scss */
+/* line 176, ../scss/style.scss */
 .toggle a {
-  color: #121410;
+  color: white;
   display: inline-block;
   padding: 10px 20px 10px 20px;
-  border: 4px solid #121410;
+  border: 3px solid black;
   border-radius: 5px 10px 0px 0px;
   font-size: 1.1em;
 }
-/* line 194, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 .toggle a:hover {
   color: white;
-  background-color: #121410;
+  background-color: black;
   transition: 1.0s ease all;
 }
 
-/* line 202, ../scss/style.scss */
+/* line 191, ../scss/style.scss */
 .main_wrapper {
   background: #7a7b7c;
   padding: 25px 25px 100px 25px;
 }
 
-/* line 207, ../scss/style.scss */
+/* line 196, ../scss/style.scss */
 .wrapper {
   background: url(../img/pattern.png);
   background-size: contain;
   background-position: fixed;
   padding: 50px;
-  border: 6px solid black;
-  border-radius: 0px 5px 5px 5px;
+  border: 10px solid black;
+  border-radius: 4px;
 }
 
-/* line 216, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 .current_projects {
   color: white;
 }
-/* line 218, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .current_projects a {
   color: white;
-  width: 50px;
+  width: 30%;
+  max-width: 150px;
   text-align: center;
 }
-/* line 223, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 .current_projects li {
   border-bottom: 1px solid #7a7b7c;
 }
-/* line 226, ../scss/style.scss */
+/* line 216, ../scss/style.scss */
 .current_projects h2 {
   padding-bottom: 10px;
   font-size: 1.2em;
 }
-/* line 230, ../scss/style.scss */
+/* line 220, ../scss/style.scss */
 .current_projects div {
   margin-bottom: 20px;
 }
-/* line 233, ../scss/style.scss */
-.current_projects h3 {
-  padding-bottom: 10px;
-  font-size: 1em;
-}
-/* line 237, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 .current_projects img {
   padding-bottom: 10px;
   width: 30%;
@@ -280,12 +263,12 @@ header .layr_logo img {
   padding: 20px 0 20px 0;
 }
 
-/* line 245, ../scss/style.scss */
+/* line 233, ../scss/style.scss */
 .titles {
   display: none;
 }
 
-/* line 249, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .meter {
   padding: 10px 0 10px 0;
   width: 25%;
@@ -297,7 +280,7 @@ header .layr_logo img {
   border: 2px solid #2473ad;
   margin-right: 10%;
 }
-/* line 260, ../scss/style.scss */
+/* line 248, ../scss/style.scss */
 .meter span {
   display: block;
   padding: 8px;
@@ -310,85 +293,75 @@ header .layr_logo img {
   z-index: 50;
 }
 
-/* line 274, ../scss/style.scss */
+/* line 262, ../scss/style.scss */
 .open_projects {
   color: white;
 }
-/* line 276, ../scss/style.scss */
+/* line 264, ../scss/style.scss */
 .open_projects a {
   color: white;
   width: 30%;
   max-width: 150px;
   text-align: center;
 }
-/* line 282, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .open_projects li {
+  margin-top: 40px;
+  padding-bottom: 60px;
   border-bottom: 1px solid #7a7b7c;
 }
-/* line 285, ../scss/style.scss */
-.open_projects h2 {
-  padding-bottom: 10px;
-  font-size: 1.2em;
-}
-/* line 289, ../scss/style.scss */
-.open_projects div {
-  margin-bottom: 20px;
-}
-/* line 292, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .open_projects h3 {
-  padding-bottom: 10px;
-  font-size: 1em;
+  padding: 10px 0 10px 0;
 }
-/* line 296, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 .open_projects img {
-  padding-bottom: 10px;
-  width: 30%;
   max-width: 100px;
   padding: 20px 0 20px 0;
 }
 
-/* line 304, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .history {
   color: white;
 }
-/* line 306, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .history a {
   color: white;
   width: 30%;
   max-width: 150px;
   text-align: center;
 }
-/* line 312, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 .history li {
   margin-top: 40px;
   padding-bottom: 60px;
   border-bottom: 1px solid #7a7b7c;
 }
-/* line 317, ../scss/style.scss */
+/* line 298, ../scss/style.scss */
 .history h3 {
   padding: 10px 0 10px 0;
 }
-/* line 321, ../scss/style.scss */
+/* line 302, ../scss/style.scss */
 .history img {
   max-width: 100px;
   padding: 20px 0 20px 0;
 }
 
-/* line 327, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 .button {
   border: 2px solid #ee5828;
-  padding: 5px 10px 5px 10px;
+  padding: 5px;
   border-radius: 5px;
   display: inline-block;
 }
-/* line 332, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 .button:hover {
   background-color: #ee5828;
   color: white;
   transition: 1s ease all;
 }
 
-/* line 339, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 .signin_wrapper {
   background: url(../img/pattern.png);
   background-size: cover;
@@ -397,7 +370,7 @@ header .layr_logo img {
   height: 100%;
 }
 
-/* line 347, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .login_box {
   padding: 20px;
   width: 70%;
@@ -408,34 +381,34 @@ header .layr_logo img {
   border: 3px solid #ee5828;
   border-radius: 5px;
 }
-/* line 356, ../scss/style.scss */
+/* line 337, ../scss/style.scss */
 .login_box img {
   padding-bottom: 20px;
   width: 100px;
   margin: 0 auto;
 }
-/* line 361, ../scss/style.scss */
+/* line 342, ../scss/style.scss */
 .login_box form {
   width: 90%;
   margin: 0 auto;
 }
-/* line 365, ../scss/style.scss */
+/* line 346, ../scss/style.scss */
 .login_box a {
   display: block;
   text-align: center;
   color: #2473ad;
 }
-/* line 370, ../scss/style.scss */
+/* line 351, ../scss/style.scss */
 .login_box h2 {
   padding: 5px;
   font-size: 1em;
 }
-/* line 374, ../scss/style.scss */
+/* line 355, ../scss/style.scss */
 .login_box h4 {
   font-style: italic;
   padding: 20px;
 }
-/* line 379, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .login_box .form_field {
   width: 90%;
   margin: 0 auto;
@@ -446,7 +419,7 @@ header .layr_logo img {
   border-radius: 5px;
 }
 
-/* line 389, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .submit_button {
   width: 250px;
   padding: 10px;
@@ -458,7 +431,7 @@ header .layr_logo img {
   border: 1px solid white;
 }
 
-/* line 401, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 .profile_background {
   background: url(../img/pattern.png);
   background-size: cover;
@@ -468,13 +441,13 @@ header .layr_logo img {
   margin-bottom: 100px;
   position: relative;
 }
-/* line 409, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 .profile_background h1 {
   font-size: 1.2em;
   color: white;
   text-align: center;
 }
-/* line 414, ../scss/style.scss */
+/* line 395, ../scss/style.scss */
 .profile_background img {
   width: 20%;
   max-width: 129px;
@@ -484,7 +457,7 @@ header .layr_logo img {
   border: 3px solid white;
   border-radius: 5px;
 }
-/* line 423, ../scss/style.scss */
+/* line 404, ../scss/style.scss */
 .profile_background h2 {
   color: white;
   position: relative;
@@ -493,34 +466,35 @@ header .layr_logo img {
   font-size: 1em;
 }
 
-/* line 432, ../scss/style.scss */
+/* line 413, ../scss/style.scss */
 footer {
   background-color: black;
+  margin-top: 100px;
   height: 100px;
   padding: 40px;
   border-top: 1px solid #2e2e2e;
 }
-/* line 437, ../scss/style.scss */
+/* line 419, ../scss/style.scss */
 footer div {
   width: 50%;
   margin: 0 auto;
 }
-/* line 441, ../scss/style.scss */
+/* line 423, ../scss/style.scss */
 footer img {
   width: 100px;
   padding-bottom: 20px;
 }
-/* line 448, ../scss/style.scss */
+/* line 430, ../scss/style.scss */
 footer li a {
   display: block;
   color: #7a7b7c;
 }
-/* line 452, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 footer li a:visited {
   color: #7a7b7c;
 }
 
-/* line 460, ../scss/style.scss */
+/* line 442, ../scss/style.scss */
 .darkbox {
   position: absolute;
   z-index: 10000;
@@ -531,7 +505,7 @@ footer li a:visited {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 469, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 .darkbox .whitebox {
   background-color: white;
   border: 5px solid #ee5828;
@@ -542,126 +516,75 @@ footer li a:visited {
   z-index: 20000;
   margin-top: 50px;
 }
-/* line 479, ../scss/style.scss */
-.darkbox h1 {
-  font-size: 1.5em;
-}
-/* line 482, ../scss/style.scss */
+/* line 461, ../scss/style.scss */
 .darkbox p {
   border-bottom: 1px solid #7a7b7c;
   padding-bottom: 10px;
 }
-/* line 486, ../scss/style.scss */
+/* line 465, ../scss/style.scss */
 .darkbox img {
   width: 80%;
   max-width: 500px;
   margin: 0 auto;
 }
-/* line 491, ../scss/style.scss */
+/* line 470, ../scss/style.scss */
 .darkbox article {
   font-style: italic;
   font-size: .9em;
 }
-/* line 495, ../scss/style.scss */
+/* line 474, ../scss/style.scss */
 .darkbox textarea {
   width: 95%;
   margin: 20px 0 20px 0;
 }
-/* line 499, ../scss/style.scss */
+/* line 478, ../scss/style.scss */
 .darkbox input {
   margin-top: 20px;
   float: right;
-  color: white;
-  background-color: #2473ad;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 515, ../scss/style.scss */
+  /* line 492, ../scss/style.scss */
   .titles {
     display: block;
     color: white;
   }
-  /* line 518, ../scss/style.scss */
+  /* line 495, ../scss/style.scss */
   .titles h4 {
-    width: 10%;
+    width: 20%;
+    display: inline-block;
+  }
+
+  /* line 501, ../scss/style.scss */
+  .current_projects h2, .current_projects h3, .current_projects div, .current_projects img {
+    width: 18%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 506, ../scss/style.scss */
+  .current_projects .meter {
+    margin: px 0 10px;
+  }
+
+  /* line 511, ../scss/style.scss */
+  .open_projects h2, .open_projects h3, .open_projects div, .open_projects img {
+    width: 22%;
+    display: inline-block;
+  }
+
+  /* line 517, ../scss/style.scss */
+  .open_projects h2, .open_projects h3, .open_projects div, .open_projects img {
+    width: 22%;
     display: inline-block;
   }
 
   /* line 524, ../scss/style.scss */
-  .current_projects h2 {
-    width: 13%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 529, ../scss/style.scss */
-  .current_projects h3 {
-    width: 13%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 534, ../scss/style.scss */
-  .current_projects img {
-    width: 18%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 539, ../scss/style.scss */
-  .current_projects div {
-    width: 13%;
-    margin-left: 3%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 545, ../scss/style.scss */
-  .current_projects .meter {
-    margin: 0px 3% 0px 3%;
-  }
-
-  /* line 550, ../scss/style.scss */
-  .open_projects h2, .open_projects h3, .open_projects div, .open_projects img {
-    width: 18%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 555, ../scss/style.scss */
-  .open_projects .meter {
-    margin: 0px 3% 0px 3%;
-  }
-
-  /* line 561, ../scss/style.scss */
   footer li {
     display: inline-block;
     width: 20%;
   }
-  /* line 565, ../scss/style.scss */
+  /* line 528, ../scss/style.scss */
   footer a {
     vertical-align: top;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 578, ../scss/style.scss */
-  .titles {
-    display: block;
-    color: white;
-  }
-  /* line 581, ../scss/style.scss */
-  .titles h4 {
-    width: 20%;
-    display: inline-block;
-  }
-
-  /* line 587, ../scss/style.scss */
-  .current_projects h2, .current_projects h3, .current_projects div, .current_projects img {
-    width: 15%;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  /* line 592, ../scss/style.scss */
-  .current_projects h3 {
-    padding: 0;
-  }
-  /* line 595, ../scss/style.scss */
-  .current_projects .meter {
-    margin: 0px 3% 0px 3%;
   }
 }
